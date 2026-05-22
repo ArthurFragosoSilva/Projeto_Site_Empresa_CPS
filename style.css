@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: sans-serif; 
+    background-color: #0b0e14;
+}
+
+header {
+    background-color: #0d1117;
+    padding: 10px 5%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    height: 80px; 
+    width: auto; 
+}
+
+.link {
+    display: flex;
+    gap: 25px; 
+}
+
+.link p {
+    color: #f0f6fc;
+    margin: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.link p:hover {
+    color: #adff2f;
+}
+
+.empresa {
+    width: 450px; 
+    height: 450px;
+    border-radius: 1rem;
+    border: solid #adff2f 2px;
+}
+.sobre-nos {
+    padding: 50px 5%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 40px; 
+}
+.texto-historia {
+    color: #f0f6fc;
+    font-size: 1.0rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+.a {
+    color: #adff2f;
+    font-size: 3rem;
+    margin: 0 0 20px 0; 
+    text-align: left; 
+    font-weight: bold;
+}
+.conteudo-texto {
+    display: flex;
+    flex-direction: column; 
+    max-width: 600px;
+}
+.main-footer {
+    background-color: #adff2f;
+    padding: 30px 5% 10px 5%; 
+    margin-top: 50px;
+    color: #0b0e14;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.titulo-footer {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    width: 40px; 
+    height: auto;
+}
+
+.item-contato p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); 
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 0;
+}
+.serviços{
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    justify-content: center;
+    gap: 40px; 
+}
+.ia{
+    width: 450px; 
+    height: 450px;
+    border-radius: 1rem;
+    border: solid #adff2f 2px;
+    
+}
+.conteudo{
+    display: flex;
+    flex-direction: column; 
+    max-width: 600px;
+}
+.b {
+    color: #adff2f;
+    font-size: 3rem;
+    margin: 0 0 20px 0; 
+    text-align: left; 
+    font-weight: bold;
+}
+.textoh{
+    color: #f0f6fc;
+    font-size: 1.0rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+    
+}
+/* Container da Seção de Produtos */
+.Produtos {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-pesquisa {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.titulo-produtos {
+    color: #adff2f;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Estrutura da Barra de Pesquisa */
+.barra-pesquisa {
+    display: flex;
+    position: relative;
+    background: #161b22; /* Um tom levemente mais claro que o fundo */
+    border: 2px solid #adff2f; /* A borda verde limão */
+    border-radius: 50px; /* Bordas arredondadas modernas */
+    padding: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efeito de brilho ao focar na barra */
+.barra-pesquisa:focus-within {
+    box-shadow: 0 0 15px rgba(173, 255, 47, 0.4);
+}
+
+/* Input de texto */
+.input-busca {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    color: #f0f6fc;
+    font-size: 1.1rem;
+}
+.input-busca::placeholder {
+    color: rgba(240, 230, 252, 0.5);
+}
+
+
+.botao-busca {
+    background-color: #adff2f;
+    border: none;
+    color: #0b0e14;
+    padding: 10px 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-busca:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+/* Seção Geral da Vitrine */
+.vitrine-produtos {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid que organiza os cards */
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.card-produto {
+    background-color: #0d1117;
+    border: 1px solid rgba(173, 255, 47, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-produto:hover {
+    transform: translateY(-10px);
+    border-color: #adff2f;
+    box-shadow: 0 10px 30px rgba(173, 255, 47, 0.15);
+}
+
+
+.imagem-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #161b22;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.card-produto:hover .imagem-container img {
+    transform: scale(1.1);
+}
+
+
+.info-produto {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-produto h3 {
+    color: #adff2f;
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.info-produto p {
+    color: #f0f6fc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    color: #f0f6fc;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+.botao-comprar {
+    background: transparent;
+    border: 2px solid #adff2f;
+    color: #adff2f;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background: #adff2f;
+    color: #0b0e14;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.link a {
+    color: #f0f6fc;
+    margin: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #adff2f;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
